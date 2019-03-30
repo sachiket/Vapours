@@ -1,19 +1,44 @@
 {% extends "base.html" %}
-
+{% load bootstrap3 %}
 {% block content %}
   {% comment %} <h1>Welcome</h1> {% endcomment %}
-  <main>
-    <div class="row container">
-      <div class="col-md-8">
-        <h1>LOGO</h1>
-      </div>
-      <div id="login" class="col-md-4">
-        
-        <h1>LOGIN HERE</h1>
+  <div id="backgrdimg"></div>
+  <main id="index-top">
+    <div class="container">
+      <div class="row">
 
+        {% comment %} info {% endcomment %}
+        <div id="about" class="col-md-6">
+          <div class="container">
+            <h1>Vapors</h1>
+            <br />
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+        </div>
 
+        <div class="col-md-1"></div>
+
+        {% comment %} login {% endcomment %}
+        {% if not user.is_authenticated %}
+        <div id="login" class="col-md-5 center">
+          <div id="login_doc" class="container">
+            <h1>Log In</h1>
+            <form  method="POST">
+              {% csrf_token %}
+              {% bootstrap_form form %}
+              <input type="submit" class='btn btn-success' value="Log In">
+            </form>
+          </div>
+        </div>
+        {% endif %}
 
       </div>
     </div>
+
+    <div id="footer">Made with love</div>
   </main>
 {% endblock %}
