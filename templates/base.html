@@ -24,7 +24,7 @@
         <div id="navbarList" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             {% if user.is_authenticated %}
-              <li><a class="nav-link" href="#">Dash Board</a></li>
+              <li><a class="nav-link" href="{% url 'test' %}">Dashboard</a></li>
               <li><a class="nav-link" href="#">Reporting Page</a></li>
               <li><a class="nav-link" href="#">Result Display Page</a></li>
               <li><a class="nav-link" href="{% url 'accounts:logout' %}">Log Out</a></li>
