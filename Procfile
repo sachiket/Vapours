@@ -1,0 +1,1 @@
+web: python manage.py migrate && gunicorn {}.wsgi --log-file -Vapors
