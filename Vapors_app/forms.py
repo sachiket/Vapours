@@ -8,76 +8,88 @@ from django.contrib.auth.models import User
 from .models import Blog
 
 BODY= [
-        ('Normal weight','Normal weight'),
-        ('Underweight','Underweight'),
-        ('Overweight','Overweight'),
-        ('Obese','Obese'),
+        ('3','Normal weight'),
+        ('2','Underweight'),
+        ('1','Overweight'),
+        ('0','Obese'),
     ]
 GENDER= [
-    ('Male', 'Male'),
-    ('Female', 'Female'),
-    ('Transgender Male', 'Transgender Male'),
-    ('Transgender Female', 'Transgender Female'),
+    ('1', 'Male'),
+    ('0', 'Female'),
+    ('3', 'Transgender Male'),
+    ('4', 'Transgender Female'),
     ]
 SEX= [
-    ('Gay/Lesbian', 'Gay/Lesbian'),
-    ('Bisexul', 'Bisexul'),
-    ('Strainght', 'Strainght'),
+    ('1', 'Gay/Lesbian'),
+    ('0', 'Bisexul'),
+    ('2', 'Strainght'),
     ]
 PAY=[
-        ('Yes and I have', 'Yes and I have'),
-        ("Yes and I haven't", "Yes and I haven't"),
-        ('No', 'No'),
+        ('2', 'Yes and I have'),
+        ('1', "Yes and I haven't"),
+        ('0', 'No'),
     ]
 
 FCHOICES= [
-    ('Low', 'Low'),
-    ('Moderate', 'Moderate'),
-    ('High', 'High'),
+    ('2', 'Low'),
+    ('1', 'Moderate'),
+    ('0', 'High'),
     ]
 aCHOICES= [
-    ('Not at all', 'Not at all'),
-    ('Several', 'Several'),
-    ('More than half the days', 'More than half the days'),
-    ('Nearly every day', 'Nearly every day'),
+    ('0', 'Not at all'),
+    ('1', 'Several'),
+    ('2', 'More than half the days'),
+    ('3', 'Nearly every day'),
     ]
 a1CHOICES= [
-    ('Often', 'Often'),
-    ('Most of the times', 'Most of the times'),
-    ('Sometimes', 'Sometimes'),
-    ('Not at all', 'Not at all'),
+    ('3', 'Often'),
+    ('2', 'Most of the times'),
+    ('2', 'Sometimes'),
+    ('1', 'Not at all'),
     ]
 
 bCHOICES= [
-    ('Yes', 'Yes'),
-    ('No', 'No'),
+    ('1', 'Yes'),
+    ('5', 'No'),
     ]
 
+b1CHOICES= [
+    ('1', 'Yes'),
+    ('3', 'No'),
+    ]
+b2CHOICES= [
+    ('0', 'Yes'),
+    ('2', 'No'),
+    ]
+b3CHOICES= [
+    ('1', 'Yes'),
+    ('0', 'No'),
+    ]
 cCHOICES= [
-    ('Hardly ever', 'Hardly ever'),
-    ('Sometimes', 'Sometimes'),
-    ('Often', 'Often'),
+    ('1', 'Hardly ever'),
+    ('2', 'Sometimes'),
+    ('3', 'Often'),
     ]
 dCHOICES= [
-    ('I plan a lot', 'I plan a lot'),
-    ('50-50', '50-50'),
-    ('I mostly focus on taking action', 'I mostly focus on taking action'),
+    ('2', 'I plan a lot'),
+    ('1', '50-50'),
+    ('0', 'I mostly focus on taking action'),
     ]
 eCHOICES= [
-    ('Satisfied', 'Satisfied'),
-    ('Not So Satisfied', 'Not So Satisfied'),
-    ('I cry a bit', 'I cry a bit'),
+    ('0', 'Satisfied'),
+    ('1', 'Not So Satisfied'),
+    ('2', 'I cry a bit'),
     ]
 
 fCHOICES= [
-    ('Really Difficult', 'Really Difficult'),
-    ('Kinda', 'Kinda'),
-    ('No', 'No'),
+    ('2', 'Really Difficult'),
+    ('1', 'Kinda'),
+    ('0', 'No'),
     ]
 gCHOICES= [
-    ('Yes and yes', 'Yes and yes'),
-    ('Yes and no', 'Yes and no'),
-    ('No and no', 'No and no'),
+    ('0', 'Yes and yes'),
+    ('2', 'Yes and no'),
+    ('3', 'No and no'),
     ]
 
 
@@ -94,26 +106,22 @@ class UserCreateForm(UserCreationForm):
 
 
 
-# class UserForm(forms.ModelForm):
-#     favorite_fruit= forms.ChoiceField(choices=FCHOICES, widget=forms.RadioSelect())
-#     class Meta:
-#         fields = ('first_name', 'last_name',)
-#         model = Order()
+
 
 
 class BlogCommentsForm(forms.ModelForm):
     Gender = forms.ChoiceField(choices=GENDER, widget=forms.RadioSelect())
     Sexuality = forms.ChoiceField(choices=SEX, widget=forms.RadioSelect())
     Body_weight = forms.ChoiceField(choices=BODY, widget=forms.RadioSelect())
-    Virgin = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    Virgin = forms.ChoiceField(choices=b3CHOICES, widget=forms.RadioSelect())
     Prostitution_legal = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
     Pay_for_sex = forms.ChoiceField(choices=PAY, widget=forms.RadioSelect())
-    Friends = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
-    Social_fear = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    # Friends = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    Social_fear = forms.ChoiceField(choices=b3CHOICES, widget=forms.RadioSelect())
     PHQ1A = forms.ChoiceField(choices=FCHOICES, widget=forms.RadioSelect())
-    PHQ1B = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    PHQ1B = forms.ChoiceField(choices=b2CHOICES, widget=forms.RadioSelect())
     PHQ1C = forms.ChoiceField(choices=a1CHOICES, widget=forms.RadioSelect())
-    PHQ1D = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    PHQ1D = forms.ChoiceField(choices=b2CHOICES, widget=forms.RadioSelect())
     #f5 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ9  = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ6A = forms.ChoiceField(choices=cCHOICES, widget=forms.RadioSelect())
@@ -128,14 +136,14 @@ class BlogCommentsForm(forms.ModelForm):
     PHQ3 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ4A = forms.ChoiceField(choices=eCHOICES, widget=forms.RadioSelect())
     PHQ4B = forms.ChoiceField(choices=dCHOICES, widget=forms.RadioSelect())
-    PHQ4C = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    PHQ4C = forms.ChoiceField(choices=b1CHOICES, widget=forms.RadioSelect())
     #f20 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ8 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ5 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     PHQ7A = forms.ChoiceField(choices=eCHOICES, widget=forms.RadioSelect())
     PHQ7B = forms.ChoiceField(choices=fCHOICES, widget=forms.RadioSelect())
     PHQ7C = forms.ChoiceField(choices=gCHOICES, widget=forms.RadioSelect())
-    PHQ7D = forms.ChoiceField(choices=bCHOICES, widget=forms.RadioSelect())
+    PHQ7D = forms.ChoiceField(choices=b1CHOICES, widget=forms.RadioSelect())
     #f27 = forms.ChoiceField(choices=aCHOICES, widget=forms.RadioSelect())
     class Meta:
         model= Blog
@@ -148,12 +156,12 @@ class BlogCommentsForm(forms.ModelForm):
         # self.fields['Gender'].label = 'Gender'
         # self.fields['Sexuality'].label = 'Sexuality'
         # self.fields['Body_weight'].label = 'Body_weight'
-        # self.fields['Virgin'].label = 'Virgin'
-        # self.fields['Prostitution_legal'].label = 'Prostitution_legal'
-        # self.fields['Pay_for_sex'].label = 'Pay_for_sex'
-        # self.fields['Friends'].label = 'Friends'
-        # self.fields['Social_fear'].label = 'Social_fear'
-        self.fields['PHQ1A'].label = 'How creative would you call yourself ?'
+        self.fields['Virgin'].label = 'Virginity'
+        self.fields['Prostitution_legal'].label = 'Do you think prostitution is legal?'
+        self.fields['Pay_for_sex'].label = 'What are your views on pay for sex?'
+        # self.fields['Friends'].label = 'Number of close friends ?'
+        self.fields['Social_fear'].label = 'Do you have social fear?'
+        self.fields['PHQ1A'].label = 'How creative would you call yourself?'
         self.fields['PHQ1B'].label = 'Do you have any hobbies?'
         self.fields['PHQ1C'].label = 'Do you often find yourself in a rut(habit or pattern of behavior that has become dull and unproductive but is hard to change)?'
         self.fields['PHQ1D'].label = 'Do you get interested in doing something new everyday?'
