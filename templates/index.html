@@ -1,6 +1,24 @@
 {% extends "base.html" %}
 {% load bootstrap3 %}
 {% block content %}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico|Lobster">
+<style>
+    #title {
+      font-family: 'Pacifico', serif;
+      font-size: 78px;
+    }
+    @media only screen and (max-width: 768px) {
+      #title {
+        font-size: 48px;
+      }
+    }
+    #info_vapors{
+      font-family: 'Lobster', serif;
+      font-size: 24px;
+    }
+</style>
+
   {% comment %} <h1>Welcome</h1> {% endcomment %}
   <div id="backgrdimg"></div>
   <main id="index-top">
@@ -10,13 +28,9 @@
         {% comment %} info {% endcomment %}
         <div id="about" class="col-md-6">
           <div class="container">
-            <h1>Vapors</h1>
+            <h1 id="title">Vapours</h1>
             <br />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <div id="info_vapors">Vapours is an web-application for calculating the level of depression by predicting the Patient Health Questionnaire(PHQ) values based on their daily life activity data and to predict wheather a student is prone to committing suicide or not. Vapours is an advanced and smart tool for Psycologists.</div>
           </div>
         </div>
 
@@ -38,7 +52,5 @@
 
       </div>
     </div>
-
-    <div id="footer">Made with love</div>
   </main>
 {% endblock %}
