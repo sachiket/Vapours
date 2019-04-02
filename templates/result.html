@@ -1,9 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 {% load staticfiles %}
-
-    <p>{{pred}}</p>
-    <p>{{phq_score}}</p>
-    <p>{{dep}}</p>
-
+<main>
+  <div class="bgclr pad">
+    <div class="container">
+      <h1>Results</h1>
+        <br />
+        <div id="results">
+            <h4>Estimated PHQ Score: {{phq_score}}</h4>
+            <br />
+            {% if dep == 1 %}
+                <h3 style="color:#ff4d4d;">The patient seems to be depressed.</h3>
+            {% else %}
+                <h4 style="color:#00e600;">The patient does not seems to be depressed.</h4>
+            {% endif %}
+            <br />
+            {% if pred == "Yes" %}
+                <b><h2 style="color:#ff3300;">The patient is prone to committing suicide.</h2></b>
+            {% else %}
+                <h3 style="color:#00e600;">The patient is not prone to committing suicide.</h3>
+            {% endif %}
+        </div>
+    <div>
+  </div>
+</main>
 {% endblock %}
