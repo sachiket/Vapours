@@ -7,6 +7,13 @@ html {
     color: #dddddd;
 }
 
+.pad {
+    padding: 2%;
+}
+.results {
+    padding: 10%;
+    margin: 10%;
+}
 #index-top {
     background-image: url(../images/img.jpg);
     height: 100%;
