@@ -2,12 +2,9 @@ from django.shortcuts import render
 from django.urls import reverse_lazy #for url navigaton
 from django.views.generic import CreateView
 from . import forms
-<<<<<<< HEAD
-=======
 from . import models
 from .models import Blog
 from .forms import BlogCommentsForm
->>>>>>> 87e7c125f95084a316647f04e334c2fa17aadbc3
 # Create your views here.
 
 class SignUp(CreateView):
@@ -15,8 +12,6 @@ class SignUp(CreateView):
     success_url = reverse_lazy('login')
     #redirect to login page
     template_name = 'accounts/signup.html'
-<<<<<<< HEAD
-=======
 
 
 
@@ -81,4 +76,3 @@ def export_users_csv(request):
 #     form_class = forms.UserForm
 #     success_url = reverse_lazy('login')
 #     template_name = 'accounts/qform.html'
->>>>>>> 87e7c125f95084a316647f04e334c2fa17aadbc3

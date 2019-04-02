@@ -1,15 +1,11 @@
 
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
-<<<<<<< HEAD
-
-=======
 from django.forms.widgets import RadioSelect
 # from .models import Order
 from django import forms
 from django.contrib.auth.models import User
 from .models import Blog
->>>>>>> 87e7c125f95084a316647f04e334c2fa17aadbc3
 
 BODY= [
         ('Normal weight','Normal weight'),
@@ -43,8 +39,6 @@ class UserCreateForm(UserCreationForm):
         super().__init__(*args,**kwargs)
         self.fields['username'].label = 'Display Name'
         self.fields['email'].label = 'Email Address'
-<<<<<<< HEAD
-=======
 
 
 
@@ -134,4 +128,3 @@ class BlogCommentsForm(forms.ModelForm):
         self.fields['PHQ7C'].label = 'Do you have a dream? Is your current status anywhere near it?'
         self.fields['PHQ7D'].label = 'Are you satisfied with the amount of effort you put in to achieve your dream?'
         #self.fields['f27'].label = 'Do you feel trouble concentrating on things, such as reading the newspaper or watching television?'
->>>>>>> 87e7c125f95084a316647f04e334c2fa17aadbc3

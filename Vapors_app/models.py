@@ -7,8 +7,6 @@ class User(auth.models.User,auth.models.PermissionsMixin):
 
     def __str__(self):
         return "@{}".format(self.username)
-<<<<<<< HEAD
-=======
 
 
 # class Order(models.Model):
@@ -52,4 +50,3 @@ class Blog(models.Model):
     PHQ7C = models.CharField(max_length=100)
     PHQ7D = models.CharField(max_length=100)
     #f27 = models.CharField(max_length=100)
->>>>>>> 87e7c125f95084a316647f04e334c2fa17aadbc3
