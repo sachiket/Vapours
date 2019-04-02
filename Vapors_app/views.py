@@ -92,10 +92,9 @@ def showform(request):
 
         pred = suicide_pred.svm_test(test = np.array(params).reshape([1, 10]))
         pred = "Yes" if pred == 1 else "No"
-        
-        print(phq_score, dep)
-        print(pred)
-        return redirect('home')
+        # print(phq_score, dep)
+        # print(pred)
+        return render(request, 'result.html', {'pred': pred, 'phq_score': phq_score[0], 'dep': dep})
 
     context= {'form': form }
 

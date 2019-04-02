@@ -26,6 +26,8 @@ urlpatterns = [
     path('accounts/',include('Vapors_app.urls',namespace='accounts')),
     path('accounts/',include('django.contrib.auth.urls')),
     path('test/',views.TestPage.as_view(),name='test'),
+    path('result/',views.ResultPage.as_view(),name='result'),
+    path('case_list/',views.CaseList.as_view(),name='case_list'),
     path('thanks/',views.ThanksPage.as_view(),name='thanks'),
 
 ]
