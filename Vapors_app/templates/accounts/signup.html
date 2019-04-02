@@ -2,13 +2,17 @@
 {% load bootstrap3 %}
 
 {% block content %}
-<div class="container">
-  <h1>Sign Up</h1>
-  <form  method="POST">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    <input type="submit" class='btn btn-success' value="Sign Up">
-  </form>
-
-</div>
+<main>
+  <div class="bgclr pad">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <form  method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" class='btn btn-success' value="Sign Up">
+      </form>
+    
+    </div>
+  </div>
+</main>
 {% endblock %}
