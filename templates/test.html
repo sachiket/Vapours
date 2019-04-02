@@ -4,15 +4,15 @@
 <main class="bgclr">
     <div class="container" id="dashboard">
         <div class="row">
-            <a href="#" class="d-block mb-4 h-10"><div class="col-sm-4">
+            <a href="{% url 'accounts:qform' %}" class="d-block mb-4 h-10"><div class="col-sm-4">
                 <div class="card">
-                    <img src={% static 'images/new_case.jpeg'%} class="card-img-top img-fluid img-thumbnail" alt="Report New Case">
+                    <img src={% static 'images/avatar.png'%} class="card-img-top img-fluid img-thumbnail" alt="Report New Case">
                     <div class="card-body">
-                        <a class="card-link" href="#">New Case</a>
+                        <a class="card-link" href="{% url 'accounts:qform' %}">New Case</a>
                     </div>
                 </div>
             </div></a>
-            
+
             <a href="#" class="d-block mb-4 h-10"><div class="col-sm-4">
                 <div class="card">
                     <img src={% static 'images/caselist.jpeg'%} class="card-img-top img-fluid img-thumbnail" alt="Case List">
@@ -22,11 +22,11 @@
                 </div>
             </div></a>
 
-            <a href="#" class="d-block mb-4 h-10"><div class="col-sm-4">
+            <a href="{% url 'accounts:export_users_csv' %}" class="d-block mb-4 h-10"><div class="col-sm-4">
                 <div class="card">
-                    <img src={% static 'images/avatar.png'%} class="card-img-top img-fluid img-thumbnail" alt="Report Case">
+                    <img src={% static 'images/demo.png'%} class="card-img-top img-fluid img-thumbnail" alt="Report Case">
                     <div class="card-body">
-                        <a class="card-link" href="#">Edit Profile</a>
+                        <a class="card-link" href="{% url 'accounts:export_users_csv' %}">Export CSV</a>
                     </div>
                 </div>
             </div></a>
