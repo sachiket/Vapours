@@ -1,0 +1,232 @@
+id,gender,sexuallity,age,bodyweight,virgin,prostitution_legal,pay_for_sex,friends,social_fear,depressed,attempt_suicide,employment,edu_level,improve_yourself_how
+id_1,1,2,25,3,1,0,0,0,1,1,1,A student,Associate degree,None
+id_2,1,2,19,1,1,1,0,8,1,1,0,A student,"Some college, no degree",Joined a gym/go to the gym
+id_3,1,2,24,3,1,0,1,2,1,1,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_4,0,1,24,3,1,0,0,10,1,1,1,A student,Trade/technical/vocational training,"Therapy, join clubs/socual clubs/meet ups, None, Volunteering, social activism, traveling"
+id_5,1,2,23,1,0,0,1,6,1,1,1,A student,Master’s degree,Therapy
+id_6,1,2,25,3,1,0,0,0,1,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Other exercise"
+id_7,1,2,24,3,0,0,1,20,0,0,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_8,0,2,23,3,1,0,1,1,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_9,1,2,21,3,0,0,0,12,0,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_10,1,2,17,1,1,1,0,5,1,1,1,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise"
+id_11,0,2,20,3,1,0,0,8,1,1,0,A student,"Some college, no degree",join clubs/socual clubs/meet ups
+id_12,1,2,24,3,1,0,0,40,1,1,0,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise"
+id_13,1,2,20,3,1,0,0,10,0,0,0,A student,Bachelor’s degree,None
+id_14,0,2,17,2,1,0,0,5,1,0,0,A student,"Some high school, no diploma","Joined a gym/go to the gym, None"
+id_15,1,2,17,3,1,0,0,5,1,1,0,A student,"Some high school, no diploma",None
+id_16,0,2,28,3,1,1,0,1,1,1,0,A student,Bachelor’s degree,None
+id_17,1,2,19,2,1,0,0,0,1,0,0,A student,"Some college, no degree","Therapy, Other exercise"
+id_18,1,2,17,2,1,1,0,5,1,0,0,A student,"Some high school, no diploma",None
+id_19,1,2,25,2,1,1,0,6,1,1,0,A student,Bachelor’s degree,Joined a gym/go to the gym
+id_20,1,2,17,2,1,0,1,5,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Therapy
+id_21,1,2,26,3,0,0,0,3,1,0,0,A student,Doctorate degree,None
+id_22,1,2,25,1,1,1,1,8,1,1,0,A student,Bachelor’s degree,Joined a gym/go to the gym
+id_23,1,2,18,3,1,0,0,17,0,1,0,A student,"Some college, no degree","Other exercise, join clubs/socual clubs/meet ups"
+id_24,1,2,19,3,0,0,0,40,0,0,0,A student,Professional degree,None
+id_25,1,2,19,3,1,0,0,15,0,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_26,1,2,24,1,1,0,1,2,0,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_27,0,2,23,3,1,0,0,1,1,1,0,A student,Master’s degree,"Cosmetic survey, Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_28,1,2,25,2,1,0,0,0,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_29,1,0,18,3,1,0,1,10,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Joined a gym/go to the gym
+id_30,1,0,24,3,1,1,0,1,1,1,1,A student,"Some college, no degree","Therapy, Other exercise"
+id_31,1,2,25,3,1,0,1,6,0,1,0,A student,Master’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_32,1,2,18,1,1,1,1,0,1,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_33,1,2,20,3,1,1,1,1,0,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy, Clubbing, living in a student house (at dorms)"
+id_34,1,2,16,2,1,0,1,8,1,1,1,A student,"Some high school, no diploma","Joined a gym/go to the gym, Therapy"
+id_35,1,2,20,1,1,0,0,4,0,0,0,A student,"Some college, no degree",None
+id_36,1,2,24,1,1,0,0,8,0,1,0,A student,Master’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_37,1,2,25,1,0,0,0,0,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_38,0,2,26,2,1,0,0,5,1,1,0,A student,Bachelor’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_39,1,2,25,3,0,0,0,0,1,1,1,A student,"Some college, no degree","Therapy, Other exercise"
+id_40,1,2,24,3,1,0,0,12,1,1,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_41,1,2,21,3,1,0,0,0,1,0,0,A student,"Some college, no degree",None
+id_42,1,2,19,3,1,0,1,2,1,1,0,A student,"Some college, no degree","join clubs/socual clubs/meet ups, Practice various skills, such as writing and piano."
+id_43,1,2,19,1,1,0,1,6,1,0,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_44,1,2,20,3,1,0,0,10,0,0,0,A student,Bachelor’s degree,None
+id_45,0,2,28,0,1,1,0,0,1,0,0,A student,Associate degree,"Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_46,1,2,18,1,1,0,1,5,1,1,0,A student,"Some college, no degree",None
+id_47,1,2,25,3,1,0,1,30,0,1,0,A student,Trade/technical/vocational training,"Joined a gym/go to the gym, Other exercise"
+id_48,1,2,23,3,0,1,2,20,1,0,1,A student,Bachelor’s degree,Other exercise
+id_49,1,0,19,1,1,0,0,0,1,1,0,A student,"Some college, no degree",None
+id_50,1,2,19,3,1,0,0,6,1,1,1,A student,"Some college, no degree","Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_51,1,2,21,3,0,1,0,6,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Cosmetic survey, Joined a gym/go to the gym, Therapy"
+id_52,1,2,16,1,1,0,0,0,1,1,1,A student,"Some high school, no diploma",Joined a gym/go to the gym
+id_53,0,2,25,3,0,0,0,2,0,0,1,A student,"Some college, no degree",None
+id_54,0,0,26,3,0,0,0,2,1,1,1,A student,Master’s degree,Joined a gym/go to the gym
+id_55,0,2,18,3,1,1,0,10,1,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_56,1,2,25,1,1,0,1,2,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_57,1,2,19,3,1,0,1,1,0,1,0,A student,Bachelor’s degree,"Cosmetic survey, Other exercise"
+id_58,0,2,17,2,1,0,0,16,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_59,0,0,18,3,0,0,0,0,1,1,1,A student,Bachelor’s degree,"Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_60,1,2,21,2,1,0,0,3,0,0,0,A student,"Some college, no degree","Therapy, join clubs/socual clubs/meet ups"
+id_61,1,2,19,2,1,0,0,0,1,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_62,1,2,20,2,1,0,0,5,1,1,0,A student,"Some college, no degree","Cosmetic survey, Joined a gym/go to the gym, Therapy"
+id_63,1,2,20,0,1,0,0,3,1,1,1,A student,"Some college, no degree","Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_64,1,0,17,2,1,0,0,2,0,1,0,A student,"Some college, no degree","Therapy, join clubs/socual clubs/meet ups"
+id_65,1,0,22,3,1,0,0,2,1,0,0,A student,"Some college, no degree",join clubs/socual clubs/meet ups
+id_66,1,2,24,3,1,1,0,3,1,0,1,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise"
+id_67,1,2,22,2,1,0,1,6,1,1,0,A student,"Some college, no degree",Other exercise
+id_68,1,2,24,3,1,1,0,1,0,0,0,A student,Bachelor’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_69,1,2,19,1,1,0,0,4,1,1,0,A student,"Some college, no degree",Other exercise
+id_70,0,0,19,3,1,1,0,1,1,1,0,A student,"Some high school, no diploma",Therapy
+id_71,1,2,19,1,1,1,0,0,0,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_72,0,0,21,3,0,0,0,10,1,1,1,A student,"Some college, no degree","Therapy, Other exercise"
+id_73,0,2,21,3,1,0,0,5,1,0,0,A student,Bachelor’s degree,"Other exercise, Hobbies - music, languages, calligraphy"
+id_74,1,2,24,3,1,0,2,5,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_75,1,2,18,3,1,1,1,5,0,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Joined a gym/go to the gym
+id_76,0,2,23,3,0,0,0,3,1,1,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_77,1,2,29,1,1,0,1,6,1,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_78,1,2,21,3,1,1,0,3,1,1,0,A student,"Some college, no degree",None
+id_79,1,2,18,2,1,0,1,3,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_80,1,2,20,1,1,0,0,1,1,1,1,A student,"Some college, no degree","Therapy, Other exercise, Develop hobbies"
+id_81,1,2,17,3,1,1,0,6,0,0,0,A student,"Some high school, no diploma",None
+id_82,1,2,21,3,1,1,0,5,1,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_83,1,2,23,3,1,1,1,1,1,1,0,A student,Bachelor’s degree,Other exercise
+id_84,1,0,23,3,0,0,1,10,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_85,1,2,19,3,1,1,0,1,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_86,0,1,15,3,1,0,0,0,1,0,0,A student,"Some high school, no diploma",None
+id_87,1,1,26,1,1,0,0,0,0,1,1,A student,Associate degree,None
+id_88,1,2,26,3,1,0,1,10,0,1,0,A student,Bachelor’s degree,Other exercise
+id_89,1,2,25,3,0,0,2,0,1,1,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy"
+id_90,0,0,22,3,0,0,0,0,1,1,1,A student,"Some college, no degree",Therapy
+id_91,1,2,23,3,1,0,0,1,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Other exercise
+id_92,1,2,27,2,1,1,0,1,1,1,0,A student,Bachelor’s degree,None
+id_93,1,2,21,1,1,0,1,1,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_94,1,2,20,3,0,0,2,0,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_95,1,2,23,3,1,0,0,0,0,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_96,0,2,26,1,1,0,1,0,0,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Therapy, join clubs/socual clubs/meet ups, medication"
+id_97,1,2,27,1,1,0,1,6,1,1,1,A student,"Some high school, no diploma",Other exercise
+id_98,1,2,24,3,1,0,0,0,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Trying to accept my fate.
+id_99,1,2,19,1,1,1,1,10,0,1,1,A student,Trade/technical/vocational training,Other exercise
+id_100,1,2,24,2,0,0,1,4,1,1,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_101,1,2,18,3,1,1,0,0,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_102,1,2,19,3,1,0,0,6,1,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Other exercise"
+id_103,0,0,21,3,0,1,0,7,1,1,1,A student,Bachelor’s degree,"Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_104,1,2,18,3,1,0,1,0,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Joined a gym/go to the gym
+id_105,1,2,28,3,1,1,0,15,0,0,0,A student,Bachelor’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_106,1,2,19,3,1,0,1,3,1,1,0,A student,"Some high school, no diploma",None
+id_107,0,2,19,3,0,0,0,5,1,1,1,A student,Associate degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_108,1,2,20,3,1,0,0,7,1,0,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_109,1,2,20,3,1,0,0,10,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_110,1,2,22,3,1,1,0,0,0,1,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_111,1,2,17,3,1,1,1,10,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_112,1,2,24,1,1,0,1,1,0,1,0,A student,Bachelor’s degree,None
+id_113,1,2,22,3,1,1,2,3,1,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Other exercise"
+id_114,1,2,20,3,1,1,0,0,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy"
+id_115,0,2,27,1,1,1,0,1,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Therapy, Other exercise, diets, change of wardrobe, medication, diet pills "
+id_116,1,2,24,1,1,0,1,6,0,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_117,1,2,24,3,0,0,0,0,0,1,0,A student,Associate degree,None
+id_118,1,2,18,3,1,0,1,20,0,1,0,A student,Master’s degree,"Joined a gym/go to the gym, Other exercise"
+id_119,1,2,18,3,0,0,0,6,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Joined a gym/go to the gym
+id_120,1,2,22,3,1,0,0,5,0,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy"
+id_121,1,2,19,3,0,1,0,0,0,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise"
+id_122,1,2,18,3,1,0,1,0,1,1,0,A student,"Some college, no degree",None
+id_123,1,2,21,3,1,1,1,10,1,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_124,1,2,23,3,0,1,0,4,1,0,0,A student,Bachelor’s degree,Other exercise
+id_125,1,2,19,0,1,0,0,0,1,1,0,A student,"Some college, no degree",None
+id_126,1,0,20,2,1,1,1,0,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_127,1,2,18,3,1,1,0,3,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Other exercise
+id_128,1,2,22,1,1,1,1,4,1,1,1,A student,Trade/technical/vocational training,"Joined a gym/go to the gym, Therapy"
+id_129,1,2,24,1,1,0,0,1,1,1,0,A student,Bachelor’s degree,None
+id_130,1,2,23,3,1,0,1,5,1,1,1,A student,Bachelor’s degree,"Cosmetic survey, Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_131,0,2,27,3,1,0,0,4,1,1,1,A student,Doctorate degree,"Cosmetic survey, Therapy"
+id_132,0,2,26,3,1,0,0,0,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_133,1,2,24,0,1,0,1,2,1,1,0,A student,Associate degree,Other exercise
+id_134,1,2,20,3,1,1,0,0,0,1,0,A student,Bachelor’s degree,Other exercise
+id_135,1,2,18,3,1,0,0,5,0,0,0,A student,"Some college, no degree",join clubs/socual clubs/meet ups
+id_136,1,2,22,3,1,1,0,1,1,1,1,A student,"Some high school, no diploma",Therapy
+id_137,1,2,26,3,1,0,0,0,0,0,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_138,1,2,22,3,1,0,0,25,1,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy"
+id_139,0,0,28,1,0,0,0,1,1,1,1,A student,"Some college, no degree","Cosmetic survey, Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_140,0,2,19,3,1,0,0,2,1,1,0,A student,"Some college, no degree","Cosmetic survey, Therapy, join clubs/socual clubs/meet ups"
+id_141,1,2,21,1,1,0,0,0,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Therapy, Other exercise"
+id_142,1,2,19,3,1,0,0,20,0,0,0,A student,Bachelor’s degree,None
+id_143,1,2,20,3,0,1,2,7,1,1,0,A student,"Some college, no degree",None
+id_144,1,2,22,3,1,1,0,0,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Therapy, Other exercise"
+id_145,1,2,23,3,0,0,0,8,1,0,0,A student,Bachelor’s degree,Other exercise
+id_146,1,0,16,2,1,0,1,0,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Called suicide hotlines
+id_147,1,2,21,1,1,0,0,0,0,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Other exercise"
+id_148,1,2,18,1,0,0,1,4,1,0,0,A student,"Some high school, no diploma","Therapy, join clubs/socual clubs/meet ups"
+id_149,1,2,18,3,1,1,0,20,1,0,0,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_150,1,2,18,3,1,0,0,8,0,0,0,A student,"Some college, no degree","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_151,1,2,28,3,0,0,1,10,0,0,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy"
+id_152,1,2,19,3,1,0,0,20,0,1,0,A student,"Some college, no degree",None
+id_153,1,2,18,3,1,1,0,0,1,1,1,A student,"Some high school, no diploma",Other exercise
+id_154,1,2,22,2,1,1,0,1,1,1,1,A student,"Some college, no degree",Joined a gym/go to the gym
+id_155,1,2,28,1,0,0,1,7,1,1,1,A student,Trade/technical/vocational training,None
+id_156,0,2,20,3,1,0,0,2,1,0,0,A student,Bachelor’s degree,None
+id_157,1,2,20,3,1,1,0,20,1,1,0,A student,"Some college, no degree",Other exercise
+id_158,1,2,23,1,1,1,0,3,1,1,0,A student,"Some college, no degree",None
+id_159,1,2,30,0,1,0,0,0,0,0,0,A student,"Some college, no degree",None
+id_160,1,2,23,1,0,0,1,4,0,1,1,A student,,"High school graduate, diploma or the equivalent (for example: GED)"
+id_161,0,2,22,3,1,0,0,0.2,0,0,0,A student,Master’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_162,1,2,20,3,1,1,0,6,1,1,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy"
+id_163,1,2,19,3,1,0,0,10,0,1,0,A student,"Some college, no degree",Joined a gym/go to the gym
+id_164,0,0,21,1,0,0,1,2,0,0,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy"
+id_165,0,0,23,3,1,1,0,3,1,1,1,A student,Master’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_166,1,2,18,1,1,1,0,5,1,1,0,A student,"Some high school, no diploma",join clubs/socual clubs/meet ups
+id_167,0,2,20,3,1,0,0,2,1,1,0,A student,"Some college, no degree",Other exercise
+id_168,0,0,21,3,0,0,0,0,1,1,0,A student,"Some college, no degree","Therapy, join clubs/socual clubs/meet ups"
+id_169,1,2,18,2,1,0,0,5,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_170,0,0,20,3,1,0,0,15,1,1,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_171,1,2,20,1,1,0,1,4,1,1,1,A student,"Some college, no degree",Other exercise
+id_172,1,2,18,3,1,0,0,3,0,1,1,A student,"Some college, no degree","Other exercise, join clubs/socual clubs/meet ups"
+id_173,1,2,25,3,0,1,2,0,0,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Other exercise"
+id_174,0,0,20,0,1,0,0,1,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Therapy
+id_175,0,2,23,3,0,0,0,5,1,1,1,A student,Bachelor’s degree,Joined a gym/go to the gym
+id_176,1,2,20,3,1,0,0,0,0,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_177,1,2,19,1,1,0,0,4,0,0,0,A student,"Some college, no degree",None
+id_178,1,2,18,3,1,0,0,20,1,0,0,A student,"Some college, no degree","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_179,1,2,28,0,1,0,0,4,1,1,1,A student,"Some college, no degree",None
+id_180,1,2,21,3,1,0,0,0,1,1,0,A student,Master’s degree,"Other exercise, join clubs/socual clubs/meet ups"
+id_181,0,0,20,3,1,0,1,2,0,1,1,A student,Bachelor’s degree,"Cosmetic survey, Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups, Fashion makeup personality etc"
+id_182,1,2,14,3,1,0,1,1,1,1,0,A student,"Some high school, no diploma","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_183,1,2,17,3,1,0,0,5,1,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_184,1,2,18,3,1,0,0,0,1,1,0,A student,"Some high school, no diploma",Changed my hairstyle and lost weight 
+id_185,1,2,18,3,1,0,0,1,1,0,0,A student,"Some high school, no diploma","Cosmetic survey, Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_186,1,2,18,2,1,0,0,7,0,1,0,A student,"Some college, no degree",None
+id_187,1,2,20,2,1,0,1,2,0,0,0,A student,Bachelor’s degree,join clubs/socual clubs/meet ups
+id_188,1,2,20,2,1,1,1,0,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_189,1,2,18,1,1,0,0,30,0,0,0,A student,"Some high school, no diploma",None
+id_190,1,2,19,3,1,0,1,1,1,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy, Other exercise"
+id_191,1,0,21,2,1,0,0,0,0,1,1,A student,"Some college, no degree","work out at home, eat more"
+id_192,1,2,20,1,1,0,0,6,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_193,0,2,23,1,0,0,0,15,0,1,1,A student,"Some college, no degree",None
+id_194,1,2,21,1,0,0,0,2,1,1,0,A student,"Some college, no degree","Cosmetic survey, Joined a gym/go to the gym, Therapy, Other exercise"
+id_195,1,2,21,3,1,0,0,0,1,1,0,A student,"Some high school, no diploma",Therapy
+id_196,0,0,21,3,1,0,0,3,1,1,0,A student,Bachelor’s degree,Therapy
+id_197,1,2,28,2,1,0,0,0,1,1,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_198,0,1,20,3,0,1,0,2,0,0,1,A student,Bachelor’s degree,"Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_199,1,2,22,1,0,1,2,2,0,0,0,A student,"Some college, no degree",None
+id_200,1,2,18,3,1,1,0,5,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Other exercise
+id_201,1,2,18,2,1,0,0,12,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",None
+id_202,1,0,24,0,1,0,1,3,1,1,1,A student,"Some high school, no diploma","Other exercise, None"
+id_203,0,2,17,1,1,1,0,10,0,1,0,A student,"Some high school, no diploma","Other exercise, Losing weight"
+id_204,1,0,26,3,0,0,0,0,1,1,1,A student,Bachelor’s degree,"Other exercise, learn new skills"
+id_205,1,2,27,0,1,0,0,1,1,1,0,A student,Master’s degree,Other exercise
+id_206,1,2,17,1,1,0,0,3,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Other exercise, join clubs/socual clubs/meet ups"
+id_207,1,2,22,3,1,1,1,0,1,1,0,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Other exercise"
+id_208,0,0,19,3,1,0,0,1,1,1,1,A student,"Some high school, no diploma",Therapy
+id_209,1,0,26,2,1,1,0,0,1,1,1,A student,"Some high school, no diploma","Therapy, Other exercise, None"
+id_210,1,2,18,2,1,1,0,0,1,0,0,A student,"Some high school, no diploma",Therapy
+id_211,4,2,25,3,1,0,0,5,1,1,1,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, join clubs/socual clubs/meet ups"
+id_212,1,2,23,2,1,1,1,0,1,1,0,A student,"Some college, no degree",Joined a gym/go to the gym
+id_213,0,2,21,3,0,0,0,4,1,1,0,A student,"Some college, no degree","Joined a gym/go to the gym, Therapy, Other exercise"
+id_214,1,2,22,1,1,0,1,2,1,1,1,A student,Associate degree,"Therapy, Other exercise"
+id_215,1,2,18,3,1,0,0,1,0,0,0,A student,"High school graduate, diploma or the equivalent (for example: GED)",Other exercise
+id_216,0,2,23,3,1,0,0,2,1,0,0,A student,Bachelor’s degree,"Joined a gym/go to the gym, join clubs/socual clubs/meet ups"
+id_217,1,0,26,3,0,0,0,15,1,0,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Other exercise
+id_218,1,2,16,2,1,0,0,0,1,1,1,A student,"Some high school, no diploma",None
+id_219,1,2,22,1,1,0,0,0,1,1,1,A student,"Some college, no degree",Therapy
+id_220,0,0,20,3,1,1,0,3,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)","Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups"
+id_221,1,2,25,1,1,0,0,3,0,1,0,A student,Professional degree,Other exercise
+id_222,1,2,27,1,1,1,0,5,0,1,1,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
+id_223,0,2,25,3,1,0,0,2,1,0,0,A student,Bachelor’s degree,Other exercise
+id_224,1,2,22,3,1,0,0,15,0,0,0,A student,"Some college, no degree",None
+id_225,1,2,23,3,1,0,0,2,1,0,0,A student,"Some college, no degree","Therapy, Other exercise"
+id_226,1,2,18,3,1,0,0,2,1,1,0,A student,"Some high school, no diploma",None
+id_227,1,2,18,3,1,0,0,30,1,0,0,A student,Bachelor’s degree,Joined a gym/go to the gym
+id_228,1,2,18,1,1,0,1,5,1,1,1,A student,"High school graduate, diploma or the equivalent (for example: GED)",Started losing weight
+id_229,1,2,18,3,1,1,1,6,0,0,0,A student,"Some high school, no diploma",Joined a gym/go to the gym
+id_230,3,0,12,0,0,0,2,0.5,1,0,1,A student,"Some high school, no diploma","Cosmetic surgery, Joined a gym/go to the gym, Therapy, Other exercise, join clubs/socual clubs/meet ups, None"
+id_231,0,2,17,3,1,0,0,20,1,1,1,A student,"Some high school, no diploma","Joined a gym/go to the gym, Other exercise, join clubs/socual clubs/meet ups"
