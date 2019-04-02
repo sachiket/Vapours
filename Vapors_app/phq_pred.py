@@ -119,7 +119,6 @@ def phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_
     # Calculating total PHQ score
     phq = np.sum([phq1_val, phq2_val, phq3_val, phq4_val, phq5_val, phq6_val, phq7_val, phq8_val, phq9_val], axis=0)
 
-    print(phq)
     # Classifying as depressed or not based on total PHQ score value based on standard PHQ Score-Depression Severity table
     dep = phq >= 10
-    return dep
+    return phq, dep

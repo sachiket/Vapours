@@ -28,57 +28,76 @@ def showform(request):
     form= BlogCommentsForm(request.POST or None)
     # form2=BlogCommentsForm.request.get(value)
     #print(form)
-    name = ""
-    phq_list = []
+    phq1 = []
+    phq2 = []
+    phq3 = []
+    phq4 = []
+    phq5 = []
+    phq6 = []
+    phq7 = []
+    phq8 = []
+    phq9 = []
+    params = []
     if form.is_valid():
-        phq_list.append(int(form.cleaned_data['PHQ1A']))
-        phq_list.append(int(form.cleaned_data['PHQ1B']))
-        phq_list.append(int(form.cleaned_data['PHQ1C']))
-        phq_list.append(int(form.cleaned_data['PHQ1D']))
-        phq_list.append(int(form.cleaned_data['PHQ9']))
-        phq_list.append(int(form.cleaned_data['PHQ6A']))
-        phq_list.append(int(form.cleaned_data['PHQ6B']))
-        phq_list.append(int(form.cleaned_data['PHQ6C']))
-        phq_list.append(int(form.cleaned_data['PHQ6D']))
-        phq_list.append(int(form.cleaned_data['PHQ2A']))
-        phq_list.append(int(form.cleaned_data['PHQ2B']))
-        phq_list.append(int(form.cleaned_data['PHQ2C']))
-        phq_list.append(int(form.cleaned_data['PHQ3']))
-        phq_list.append(int(form.cleaned_data['PHQ4A']))
-        phq_list.append(int(form.cleaned_data['PHQ4B']))
-        phq_list.append(int(form.cleaned_data['PHQ4C']))
-        phq_list.append(int(form.cleaned_data['PHQ8']))
-        phq_list.append(int(form.cleaned_data['PHQ5']))
-        phq_list.append(int(form.cleaned_data['PHQ7A']))
-        phq_list.append(int(form.cleaned_data['PHQ7B']))
-        phq_list.append(int(form.cleaned_data['PHQ7C']))
-        phq_list.append(int(form.cleaned_data['PHQ7D']))
-        print(type(phq_list[0]))
-        name = form.cleaned_data['Name']
-        print(name)
-        print(phq_list)
-
         form.save()
-        phq1_df_test = np.array([1, 0, 3, 0]).reshape([1, 4])
-        phq2_df_test = np.array([1, 1, 1]).reshape([1, 3])
-        phq3_df_test = np.array([2]).reshape([1, 1])
-        phq4_df_test = np.array([1, 2, 1]).reshape([1, 3])
-        phq5_df_test = np.array([2]).reshape([1, 1])
-        phq6_df_test = np.array([2, 1, 1, 1]).reshape([1, 4])
-        phq7_df_test = np.array([2, 2, 2, 3]).reshape([1, 4])
-        phq8_df_test = np.array([1]).reshape([1, 1])
-        phq9_df_test = np.array([1]).reshape([1, 1])
-        dep = phq_pred_dup.phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_df_test, phq6_df_test, phq7_df_test, phq8_df_test, phq9_df_test)
+
+        phq1.append(int(form.cleaned_data['PHQ1A']))
+        phq1.append(int(form.cleaned_data['PHQ1B']))
+        phq1.append(int(form.cleaned_data['PHQ1C']))
+        phq1.append(int(form.cleaned_data['PHQ1D']))
+        phq9.append(int(form.cleaned_data['PHQ9']))
+        phq6.append(int(form.cleaned_data['PHQ6A']))
+        phq6.append(int(form.cleaned_data['PHQ6B']))
+        phq6.append(int(form.cleaned_data['PHQ6C']))
+        phq6.append(int(form.cleaned_data['PHQ6D']))
+        phq2.append(int(form.cleaned_data['PHQ2A']))
+        phq2.append(int(form.cleaned_data['PHQ2B']))
+        phq2.append(int(form.cleaned_data['PHQ2C']))
+        phq3.append(int(form.cleaned_data['PHQ3']))
+        phq4.append(int(form.cleaned_data['PHQ4A']))
+        phq4.append(int(form.cleaned_data['PHQ4B']))
+        phq4.append(int(form.cleaned_data['PHQ4C']))
+        phq8.append(int(form.cleaned_data['PHQ8']))
+        phq5.append(int(form.cleaned_data['PHQ5']))
+        phq7.append(int(form.cleaned_data['PHQ7A']))
+        phq7.append(int(form.cleaned_data['PHQ7B']))
+        phq7.append(int(form.cleaned_data['PHQ7C']))
+        phq7.append(int(form.cleaned_data['PHQ7D']))
+        # name = form.cleaned_data['Name']
+        # print(name)
+
+        phq1_df_test = np.array(phq1).reshape([1, 4])
+        phq2_df_test = np.array(phq2).reshape([1, 3])
+        phq3_df_test = np.array(phq3).reshape([1, 1])
+        phq4_df_test = np.array(phq4).reshape([1, 3])
+        phq5_df_test = np.array(phq5).reshape([1, 1])
+        phq6_df_test = np.array(phq6).reshape([1, 4])
+        phq7_df_test = np.array(phq7).reshape([1, 4])
+        phq8_df_test = np.array(phq8).reshape([1, 1])
+        phq9_df_test = np.array(phq9).reshape([1, 1])
+        phq_score, dep = phq_pred.phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_df_test, phq6_df_test, phq7_df_test, phq8_df_test, phq9_df_test)
         dep = 1 if dep == True else 0
-        print(dep)
-        pred = suicide_pred_dup.svm_test(test = np.array([1, 2, 19, 1, 1, 1, 0, 8.0, 1, dep]).reshape([1, 10]))
+
+
+        params.append(int(form.cleaned_data['Gender']))
+        params.append(int(form.cleaned_data['Sexuality']))
+        params.append(int(form.cleaned_data['Age']))
+        params.append(int(form.cleaned_data['Body_weight']))
+        params.append(int(form.cleaned_data['Virgin']))
+        params.append(int(form.cleaned_data['Prostitution_legal']))
+        params.append(int(form.cleaned_data['Pay_for_sex']))
+        params.append(int(form.cleaned_data['Friends']))
+        params.append(int(form.cleaned_data['Social_fear']))
+        params.append(dep)
+
+        pred = suicide_pred.svm_test(test = np.array(params).reshape([1, 10]))
         pred = "Yes" if pred == 1 else "No"
+        
+        print(phq_score, dep)
         print(pred)
         return redirect('home')
 
     context= {'form': form }
-
-    csv_training(name)
 
     return render(request, 'accounts/qform.html',context)
 
