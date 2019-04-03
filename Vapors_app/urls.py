@@ -15,13 +15,4 @@ urlpatterns = [
     url(r'signup/$' ,
         views.SignUp.as_view(),
         name='signup'),
-    
-    url(r'form/$' ,
-        views.showform,
-        name='qform'),
-
-    url(r'csv/$', 
-        views.export_users_csv,
-        name='export_users_csv'),
-        
 ]

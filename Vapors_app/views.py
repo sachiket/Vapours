@@ -1,9 +1,6 @@
-import csv
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.urls import reverse_lazy #for url navigaton
 from django.views.generic import CreateView
-from django.views.generic import TemplateView
-from django.http import HttpResponse
 from . import forms
 from . import models
 from .models import Blog
