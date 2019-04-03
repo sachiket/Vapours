@@ -176,7 +176,7 @@ class BlogCommentsForm(forms.ModelForm):
         self.fields['PHQ2B'].label = 'How frequently do you find yourself complaining about body aches and pains'
         self.fields['PHQ2C'].label = 'Have you ever felt irritating/grouchy/moody for the whole day?'
         #self.fields['f15 '].label = 'Do you feeling down, depressed, or hopeless?'
-        self.fields['PHQ3'].label = 'Do you have trouble falling or staying asleep, or sleeping too much?'
+        self.fields['PHQ3'].label = 'Do you have trouble falling asleep, or have oversleeping issues?'
         self.fields['PHQ4A'].label = 'How do you feel when you go to bed?'
         self.fields['PHQ4B'].label = 'Do you spend more time planning the day or in taking action? '
         self.fields['PHQ4C'].label = 'Do you get interested in trying a new hobby?'
