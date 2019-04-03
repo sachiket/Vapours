@@ -15,12 +15,6 @@ names = ("Student_id", "PHQ1A", "PHQ1B", "PHQ1C", "PHQ1D", "PHQ1", "PHQ9", "PHQ6
 df = pd.read_csv(path, names=names, skiprows=1)
 df.head()
 
-# df = df.sample(frac=1)
-# df.head()
-
-
-# In[4]:
-
 
 # Separating each PHQ along with its predictor variables
 phq1_df = df[["PHQ1A", "PHQ1B", "PHQ1C", "PHQ1D", "PHQ1"]]
@@ -44,31 +38,28 @@ phq7_df_train = phq7_df
 phq8_df_train = phq8_df
 phq9_df_train = phq9_df
 
-
-# phq1_df_test = np.array([1, 0, 3, 0]).reshape([1, 4])
-# phq2_df_test = np.array([1, 1, 1]).reshape([1, 3])
-# phq3_df_test = np.array([2]).reshape([1, 1])
-# phq4_df_test = np.array([1, 2, 1]).reshape([1, 3])
-# phq5_df_test = np.array([2]).reshape([1, 1])
-# phq6_df_test = np.array([2, 1, 1, 1]).reshape([1, 4])
-# phq7_df_test = np.array([2, 2, 2, 3]).reshape([1, 4])
-# phq8_df_test = np.array([1]).reshape([1, 1])
-# phq9_df_test = np.array([1]).reshape([1, 1])
+rfc1 = RandomForestClassifier(max_depth=2, oob_score=True)
+rfc1.fit(phq1_df_train[["PHQ1A", "PHQ1B", "PHQ1C", "PHQ1D"]], phq1_df_train[["PHQ1"]])
+rfc2 = RandomForestClassifier(max_depth=2)
+rfc2.fit(phq2_df_train[["PHQ2A", "PHQ2B", "PHQ2C"]], phq2_df_train[["PHQ2"]])
+rfc4 = RandomForestClassifier(max_depth=2, criterion="entropy")
+rfc4.fit(phq4_df_train[["PHQ4A", "PHQ4B", "PHQ4C"]], phq4_df_train[["PHQ4"]])
+rfc6 = RandomForestClassifier()
+rfc6.fit(phq6_df_train[["PHQ6A","PHQ6B", "PHQ6C", "PHQ6D"]], phq6_df_train[["PHQ6"]])
+rfc7 = RandomForestClassifier(max_depth=2, criterion="entropy")
+rfc7.fit(phq7_df_train[["PHQ7A","PHQ7B", "PHQ7C", "PHQ7D"]], phq7_df_train[["PHQ7"]])
 
 def phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_df_test, phq6_df_test, phq7_df_test, phq8_df_test, phq9_df_test):
+    
     # PHQ1
     # Random Forest Classifier for prediciting PHQ1-value
-    rfc = RandomForestClassifier(max_depth=2, oob_score=True)
-    rfc.fit(phq1_df_train[["PHQ1A", "PHQ1B", "PHQ1C", "PHQ1D"]], phq1_df_train[["PHQ1"]])
-    phq1_val = rfc.predict(phq1_df_test)
+    phq1_val = rfc1.predict(phq1_df_test)
     print("phq1_val: "+ str(phq1_val))
 
 
     # PHQ2
     # Random Forest Classifier for prediciting PHQ2-value
-    rfc = RandomForestClassifier(max_depth=2)
-    rfc.fit(phq2_df_train[["PHQ2A", "PHQ2B", "PHQ2C"]], phq2_df_train[["PHQ2"]])
-    phq2_val = rfc.predict(phq2_df_test)
+    phq2_val = rfc2.predict(phq2_df_test)
     print("phq2_val: "+ str(phq2_val))
 
 
@@ -79,9 +70,7 @@ def phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_
 
     # PHQ4
     # Random Forest Classifier for prediciting PHQ4-value
-    rfc = RandomForestClassifier(max_depth=2, criterion="entropy")
-    rfc.fit(phq4_df_train[["PHQ4A", "PHQ4B", "PHQ4C"]], phq4_df_train[["PHQ4"]])
-    phq4_val = rfc.predict(phq4_df_test)
+    phq4_val = rfc4.predict(phq4_df_test)
     print("phq4_val: "+ str(phq4_val))
 
 
@@ -93,17 +82,13 @@ def phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_
 
     # PH6
     # Random Forest Classifier for prediciting PHQ6-value
-    rfc = RandomForestClassifier()
-    rfc.fit(phq6_df_train[["PHQ6A","PHQ6B", "PHQ6C", "PHQ6D"]], phq6_df_train[["PHQ6"]])
-    phq6_val = rfc.predict(phq6_df_test)
+    phq6_val = rfc6.predict(phq6_df_test)
     print("phq6_val: "+ str(phq6_val))
 
 
     # PHQ7
     # Random Forest Classifier for prediciting PHQ7-value
-    rfc = RandomForestClassifier(max_depth=2, criterion="entropy")
-    rfc.fit(phq7_df_train[["PHQ7A","PHQ7B", "PHQ7C", "PHQ7D"]], phq7_df_train[["PHQ7"]])
-    phq7_val = rfc.predict(phq7_df_test)
+    phq7_val = rfc7.predict(phq7_df_test)
     print("phq7_val: "+ str(phq7_val))
 
 
@@ -114,11 +99,11 @@ def phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_
 
     # PHQ9
     phq9_val = np.array(phq9_df_test).reshape(len(phq9_df_test))
-    print("phq9_val: "+ str(phq9_val))
+    print("\nPHQ9", phq9_val, sep="\n")
 
     # Calculating total PHQ score
     phq = np.sum([phq1_val, phq2_val, phq3_val, phq4_val, phq5_val, phq6_val, phq7_val, phq8_val, phq9_val], axis=0)
 
     # Classifying as depressed or not based on total PHQ score value based on standard PHQ Score-Depression Severity table
     dep = phq >= 10
-    return phq, dep
+    return phq1_val, phq2_val, phq3_val, phq4_val, phq5_val, phq6_val, phq7_val, phq8_val, phq9_val, phq, dep

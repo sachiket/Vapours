@@ -72,7 +72,7 @@ def showform(request):
         phq7_df_test = np.array(phq7).reshape([1, 4])
         phq8_df_test = np.array(phq8).reshape([1, 1])
         phq9_df_test = np.array(phq9).reshape([1, 1])
-        phq_score, dep = phq_pred.phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_df_test, phq6_df_test, phq7_df_test, phq8_df_test, phq9_df_test)
+        phq1_val, phq2_val, phq3_val, phq4_val, phq5_val, phq6_val, phq7_val, phq8_val, phq9_val, phq_score, dep = phq_pred.phq_preqiction(phq1_df_test, phq2_df_test, phq3_df_test, phq4_df_test, phq5_df_test, phq6_df_test, phq7_df_test, phq8_df_test, phq9_df_test)
         dep = 1 if dep == True else 0
 
 
@@ -89,9 +89,8 @@ def showform(request):
 
         pred = suicide_pred.svm_test(test = np.array(params).reshape([1, 10]))
         pred = "Yes" if pred == 1 else "No"
-        # print(phq_score, dep)
-        # print(pred)
-        return render(request, 'result.html', {'pred': pred, 'phq_score': phq_score[0], 'dep': dep})
+
+        return render(request, 'result.html', {'phq1': phq1_val[0], 'phq2': phq2_val[0], 'phq3': phq3_val[0], 'phq4': phq4_val[0], 'phq5': phq5_val[0], 'phq6': phq6_val[0], 'phq7': phq7_val[0], 'phq8': phq8_val[0], 'phq9': phq9_val[0], 'pred': pred, 'phq_score': phq_score[0], 'dep': dep})
 
     context= {'form': form }
 

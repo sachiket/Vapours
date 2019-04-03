@@ -7,19 +7,35 @@
       <h1>Results</h1>
         <br />
         <div id="results">
-            <h4>Estimated PHQ Score: {{phq_score}}</h4>
-            <br />
-            {% if dep == 1 %}
-                <h3 style="color:#ff4d4d;">The patient seems to be depressed.</h3>
-            {% else %}
-                <h4 style="color:#00e600;">The patient does not seems to be depressed.</h4>
-            {% endif %}
-            <br />
-            {% if pred == "Yes" %}
-                <b><h2 style="color:#ff3300;">The patient is prone to committing suicide.</h2></b>
-            {% else %}
-                <h3 style="color:#00e600;">The patient is not prone to committing suicide.</h3>
-            {% endif %}
+          <center>
+            <table class="table table-dark table-striped">
+              <thead><tr><th>PHQ</th><th>Value</th></tr></thead>
+              <tbody>
+                <tr><td>PHQ1</td><td>{{phq1}}</td></tr>
+                <tr><td>PHQ2</td><td>{{phq2}}</td></tr>
+                <tr><td>PHQ3</td><td>{{phq3}}</td></tr>
+                <tr><td>PHQ4</td><td>{{phq4}}</td></tr>
+                <tr><td>PHQ5</td><td>{{phq5}}</td></tr>
+                <tr><td>PHQ6</td><td>{{phq6}}</td></tr>
+                <tr><td>PHQ7</td><td>{{phq7}}</td></tr>
+                <tr><td>PHQ8</td><td>{{phq8}}</td></tr>
+                <tr><td>PHQ9</td><td>{{phq9}}</td></tr>
+              </tbody>
+            </table>
+          </center>
+          <h4>Total PHQ Score: {{phq_score}}</h4>
+          <br />
+          {% if dep == 1 %}
+              <h3 style="color:#ff4d4d;">The patient seems to be depressed.</h3>
+          {% else %}
+              <h4 style="color:#00e600;">The patient does not seems to be depressed.</h4>
+          {% endif %}
+          <br />
+          {% if pred == "Yes" %}
+              <b><h2 style="color:#ff3300;">The patient is prone to committing suicide.</h2></b>
+          {% else %}
+              <h3 style="color:#00e600;">The patient is not prone to committing suicide.</h3>
+          {% endif %}
         </div>
     <div>
   </div>
