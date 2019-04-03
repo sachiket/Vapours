@@ -4,6 +4,12 @@
 
 Deployed on IBM-Cloud: https://tinyurl.com/dtu-Vapors
 
+![Landing Page](Screenshots/LandingPage.png)
+![Dashboard](Screenshots/Dashboard.png)
+![Questions](Screenshots/Questions.png)
+![Results](Screenshots/results.png)
+![Export CSV](Screenshots/exportCSV.png)
+
 ## Installation
 
 1. Clone the repo.
