@@ -174,7 +174,7 @@ class BlogCommentsForm(forms.ModelForm):
         #self.fields['f11 '].label = 'Do you feel bad about yourself or that you are a failure or have let yourself or your family down?'
         self.fields['PHQ2A'].label = 'Do you feel like you do not care about anything anymore? '
         self.fields['PHQ2B'].label = 'How frequently do you find yourself complaining about body aches and pains'
-        self.fields['PHQ2C'].label = 'Have you ever felt irritable/grouchy/moody for the whole day?'
+        self.fields['PHQ2C'].label = 'Have you ever felt irritating/grouchy/moody for the whole day?'
         #self.fields['f15 '].label = 'Do you feeling down, depressed, or hopeless?'
         self.fields['PHQ3'].label = 'Do you have trouble falling or staying asleep, or sleeping too much?'
         self.fields['PHQ4A'].label = 'How do you feel when you go to bed?'
