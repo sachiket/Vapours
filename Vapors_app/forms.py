@@ -168,7 +168,7 @@ class BlogCommentsForm(forms.ModelForm):
         #self.fields['f5  '].label = 'Do you have little interest or pleasure in doing things?'
         self.fields['PHQ9'].label = 'Have you ever had thoughts that you would be better off dead, or of hurting yourself?'
         self.fields['PHQ6A'].label = 'Do you feel lonely and isolated due to lack of family unity?'
-        self.fields['PHQ6B'].label = 'Is family relation less important to people close to you?'
+        self.fields['PHQ6B'].label = 'Do people close to you treat family relations with low importance'
         self.fields['PHQ6C'].label = "Do you feel like you can't focus on doing things and have an unstable mind?"
         self.fields['PHQ6D'].label = 'Do you feel of giving up and leave everything?'
         #self.fields['f11 '].label = 'Do you feel bad about yourself or that you are a failure or have let yourself or your family down?'
