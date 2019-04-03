@@ -26,7 +26,7 @@ SECRET_KEY = 'u_hu3qu^4o^ti5yze*5y)+e!q3h7i-jzt-s)io5w2ka)+(b=yp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vapors2.eu-gb.mybluemix.net']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
