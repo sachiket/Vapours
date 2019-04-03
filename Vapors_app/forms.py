@@ -30,7 +30,6 @@ PAY=[
         ('0', 'No'),
     ]
 
-<<<<<<< HEAD
 FCHOICES= [
     ('2', 'Low'),
     ('1', 'Moderate'),
@@ -94,8 +93,6 @@ gCHOICES= [
     ]
 
 
-=======
->>>>>>> dev
 class UserCreateForm(UserCreationForm):
     class Meta:
         fields = ('username','email','password1','password2')
