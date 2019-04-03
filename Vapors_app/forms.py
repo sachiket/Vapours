@@ -181,7 +181,7 @@ class BlogCommentsForm(forms.ModelForm):
         self.fields['PHQ4B'].label = 'Do you spend more time planning the day or on taking action? '
         self.fields['PHQ4C'].label = 'Do you get interested in trying a new hobby?'
         #self.fields['f20 '].label = 'Do you feeling tired or having little energy?'
-        self.fields['PHQ8'].label = 'Moving or speaking so slowly that other people could have noticed. Or the opposite being so figety or restless that you have been moving around a lot more than usual?'
+        self.fields['PHQ8'].label = 'Do you find yourself moving or speaking so slowly that other people could have noticed. Or the opposite being so figety or restless that you have been moving around a lot more than usual?'
         self.fields['PHQ5'].label = 'Do you have poor appetite or overeating?'
         self.fields['PHQ7A'].label = 'Are you satisfied with your current job or education?'
         self.fields['PHQ7B'].label = 'Do you find it difficult to concentrate on this job/education?'
