@@ -166,7 +166,7 @@ class BlogCommentsForm(forms.ModelForm):
         self.fields['PHQ1C'].label = 'How often do you find yourself in a rut(habit or pattern of behavior that has become dull and unproductive but is hard to change)?'
         self.fields['PHQ1D'].label = 'Do you get interested in doing something new everyday?'
         #self.fields['f5  '].label = 'Do you have little interest or pleasure in doing things?'
-        self.fields['PHQ9'].label = 'Have you ever thoughts that you would be better off dead, or of hurting yourself?'
+        self.fields['PHQ9'].label = 'Have you ever had thoughts that you would be better off dead, or of hurting yourself?'
         self.fields['PHQ6A'].label = 'Do you feel lonely and isolated due to lack of family unity?'
         self.fields['PHQ6B'].label = 'Is family relation less important to people close to you?'
         self.fields['PHQ6C'].label = "Do you feel like you can't focus on doing things and have an unstable mind?"
